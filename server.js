@@ -18,7 +18,7 @@ app.use(bodyparser.urlencoded({extended: true}))
 app.set('view engine', 'ejs')
 
 // Load Assets
-app.use(express.static('public'))
+app.use('/public', express.static('public'));
 app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
@@ -26,6 +26,10 @@ app.use('/img', express.static(__dirname + 'public/img'))
 
 app.get('/', (req,res)=>{
     res.render("index");
+})
+
+app.get('/add-tasks', (req,res)=>{
+    res.render("add_tasks");
 })
 
 app.listen(3000,()=>{console.log(`Server is running on https//localhost:${3000}`)})

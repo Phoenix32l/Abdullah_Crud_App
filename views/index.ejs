@@ -1,11 +1,41 @@
+
+
 <!-- Header -->
-<%- include('../partials/header.ejs') %>
+<%- include('partials/_header')%>
 <!-- Header -->
 
 
+
+<!-- main  -->
+<main class="main-site">
+    <div class="container">
+        <div class="nav-main">
+            <a href="/add-user">
+                <span class = "text-gradient">Add New Task</span>
+            </a>
+        </div>
+
+        <form action="/" method="POST">
+            <table class = "table">
+                <thead class = "thead-styling">
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Notes</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('partials/_table')%>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<!-- main  -->
 
 
 
 <!-- Footer -->
-<%- include('../partials/footer.ejs') %>
+<%- include('partials/_footer')%>
 <!-- Footer -->
