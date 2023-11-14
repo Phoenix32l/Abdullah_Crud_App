@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Roboto&family=Source+Sans+3&display=swap');
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+
+.nav-head{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.nav-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+
+.text-gradient{
+    background: linear-gradient(to right, #2d78e2, #0052e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#header nav{
+    background-color: #9291e2;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+
+.main-site{
+    margin-top: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.main-site .container .box-nav > a{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+
+.main-site .container form{
+    margin: 3rem 0;
+}
+
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+
+.table td, .table th{
+    padding: 2rem;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid #4e545a;
+}
+
+
+.table td > a.btn{
+    padding: .4rem 2rem;
+    font-size: 2rem;
+    margin: 0 .5rem;
+}
+
+
+.table tr:hover{
+    background-color:#9291e2 ;
+}
+
+
+.table .thead-styling th{
+    color: #fff;
+    background-color: #9291e2;
+    border-color: #9291e2;
+}
+
+
+header .container a{
+    color: #fff;
+}
+
+.nav-main span, td{
+    font-size: 1.5rem;
+}
+
+
+th{
+    font-size: 1.75rem;
+}
+
+
+
+
+/* //ADDING TASKS PAGE CSS */
+
+
+form input, form textarea, form button{
+    display: flex;
+    margin: auto;
+}
+
+
+
+.text_input{
+    height: 4rem;
+    width: 60rem;
+    margin-top: 1rem;
+}
+
+.form-add button{
+    margin-top: 1rem;
+}
+
+
+
+
+/* //MEDIA QUERIES */
+
+@media only screen and (max-width:1024px){
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+}
