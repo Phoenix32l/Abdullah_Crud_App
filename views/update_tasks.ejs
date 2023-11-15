@@ -11,10 +11,18 @@
                 </div>
             </div>
             <div class="form-header text-center">
-                <h2 class = "text-styling">Create New Task!</h2>
+                <h2 class = "text-styling">Update Task</h2>
             </div>
             
-            <%- include('partials/_input')%>
+            <form method="POST" id="update_task">
+                <div class="new_task">
+                    <div class="form-add">
+                        <input type="text" name = "task" class = "text_input" placeholder="Add Task">
+                        <input type="text" name = "notes" class = "text_input" placeholder="Add Notes">
+                        <button type = "submit" class="btn text-dark update">Add</button>
+                    </div>
+                </div>
+            </form>
 
 
         </div>

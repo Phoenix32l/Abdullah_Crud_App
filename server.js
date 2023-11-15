@@ -23,13 +23,8 @@ app.use('/css', express.static(__dirname + 'public/css'))
 app.use('/js', express.static(__dirname + 'public/js'))
 app.use('/img', express.static(__dirname + 'public/img'))
 
+// Load Routes
 
-app.get('/', (req,res)=>{
-    res.render("index");
-})
-
-app.get('/add-tasks', (req,res)=>{
-    res.render("add_tasks");
-})
+app.use('/',require('./server/routes/router'))
 
 app.listen(3000,()=>{console.log(`Server is running on https//localhost:${3000}`)})
