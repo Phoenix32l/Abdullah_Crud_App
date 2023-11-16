@@ -144,8 +144,21 @@ form input, form textarea, form button{
     margin-top: 1rem;
 }
 
+/* //FOOTER */
 
+footer ul{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 20rem;
+    list-style-type: none;
+    margin-top: 40rem;
+    margin-left: 20rem;
+}
 
+.icon{
+    font-size: 2rem;
+}
 
 /* //MEDIA QUERIES */
 

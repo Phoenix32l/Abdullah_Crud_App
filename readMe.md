@@ -1,6 +1,6 @@
 Author: Abdullah Umair
 
-This project is a todo list applicaiton that follows CRUD principles
+This project is a To Do list application that follows CRUD principles
 
 
 
